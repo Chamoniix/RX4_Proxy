@@ -1,0 +1,16 @@
+#logo {
+  position:absolute;
+  height: 35%;
+  width: 15%;
+  border: none;
+  left: 0;
+  background-color: #222;
+}
+
+.reveal .slide-number {
+    color: #80BA26;
+    font-size : 0.7em;
+    right: 47px;
+    bottom: 30px;
+    background-color: inherit;
+}

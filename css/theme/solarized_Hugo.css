@@ -11,6 +11,24 @@ html * {
   color-profile: sRGB;
   rendering-intent: auto; }
 
+
+  @font-face {
+    font-family: 'Helvetica 35 Thin';
+    src: url("../../lib/font/HelvNeue35_Cyr.ttf") format("truetype");
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Helvetica 65 Medium";
+    src: url("../../lib/font/HelvNeue65_Cyr.ttf") format("truetype");
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Helvetica 75";
+    src: url("../../lib/font/HelvNeue75_Cyr.ttf") format("truetype");
+  }
+
 /*********************************************
  * GLOBAL STYLES
  *********************************************/
@@ -19,7 +37,7 @@ body {
   background-color: #fdf6e3; }
 
 .reveal {
-  font-family: "Lato", sans-serif;
+   font-family: "Helvetica 65 Medium", "Arial", sans-serif;
   font-size: 40px;
   font-weight: normal;
   color: #657b83; }
@@ -50,7 +68,7 @@ body {
 .reveal h6 {
   margin: 0 0 20px 0;
   color: #586e75;
-  font-family: "League Gothic", Impact, sans-serif;
+  font-family: "Helvetica 35 Thin", sans-serif;
   font-weight: normal;
   line-height: 1.2;
   letter-spacing: normal;
@@ -59,7 +77,7 @@ body {
   word-wrap: break-word; }
 
 .reveal h1 {
-  font-size: 3.77em; }
+  font-size: 2.5em; }
 
 .reveal h2 {
   font-size: 2.11em; }
@@ -253,14 +271,14 @@ body {
  * NAVIGATION CONTROLS
  *********************************************/
 .reveal .controls {
-  color: #268bd2; }
+  color: #00649C; }
 
 /*********************************************
  * PROGRESS BAR
  *********************************************/
 .reveal .progress {
   background: rgba(0, 0, 0, 0.2);
-  color: #268bd2; }
+  color: #DB2E15; }
 
 .reveal .progress span {
   -webkit-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
