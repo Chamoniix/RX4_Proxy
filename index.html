@@ -52,10 +52,131 @@
 				</section>
 
 <!-- Qu'est ce qu'un proxy ? -->
-				<section data-markdown>
-					## Qu'est ce qu'un proxy ?
-					* Un serveur **Mandaté**
-					* Souvent **HTML**
+				<section>
+					<section data-background="#b5533c" data-background-transition="zoom">
+						<h2>1. Qu'est ce qu'un proxy ?</h2>
+					</section>
+
+
+					<section data-markdown>
+						### Qu'est ce qu'un proxy ?
+						* Un serveur **Mandaté**
+						* Pour une application
+						* Transmet les requêtes à internet
+						* Souvent **HTML**
+						* Fonctionne comme un "relai"
+					</section>
+
+					<section>
+						<img alt="proxy" src="img/proxy.gif" id="proxy"/>
+					</section>
+
+					<section>
+						<h2>Un rôle compromis</h2>
+						<p>
+							Utillisation du protocol TCP/IP dans les <b>réseaux locaux</b>
+						</p>
+						<p>
+							-> Les routeurs assurent le rôle de relais
+						</p><br />
+						<h3 class="fragment">
+							Les proxy sont utilisés pour d'autres fonctionalités
+						</h3>
+					</section>
+				</section>
+
+<!-- Fonctionnalités -->
+				<section>
+					<section data-background="#b5533c" data-background-transition="zoom">
+						<h2>2. Les Fonctionnalités</h2>
+					</section>
+
+					<section>
+						<h2>Le <b>Caching</b> (proxy-cache)</h2>
+						<ul>
+							<li>Garde en mémoire les pages les plus visitées</li>
+							<li>Affichange rapide</li>
+							<li>Bande passante réduite</li>
+						</ul><br /><br />
+						<blockquote style="width:100%;">
+							Pour que ceci fonctionne il est important que le proxy compare souvent ses données avec celles en ligne.
+						</blockquote>
+					</section>
+
+					<section>
+						<h2>Le Logging / Tracking</h2>
+						<ul>
+							<li>Enregistre chaque connexion</li>
+							<li>Remplit des journaux d'activités <em>(logs)</em></li>
+							<li>Enregistre Utilisateur + site accédé</li>
+						</ul>
+					</section>
+
+					<section>
+						<h2>Le filtrage</h2>
+						<ul>
+							<li>Analyse la <b>Destination</b> de la requête</li>
+							<li>Analyse le contenu des <b>réponses serveur</b></li>
+							<li>Appilque un filtrage :
+								<ul>
+									<li>Liste blanche</li>
+									<li>Liste noire</li>
+									<li>Filtrage de contenu (mots-clés)</li>
+								</ul>
+							</li>
+						</ul>
+					</section>
+
+					<section>
+						<h2>L'authentification</h2>
+						<ul>
+							<li>Intermédiaire indispensable</li>
+							<li>Authentification possible</li>
+							<li>Accès restreint aux ressources externes</li>
+						</ul>
+					</section>
+				</section>
+
+<!-- Reverse Proxy -->
+				<section>
+					<section data-background="#b5533c" data-background-transition="zoom">
+						<h2>3. Reverse Proxy</h2>
+					</section>
+
+					<section>
+						<h2>Qu'est ce qu'un reverse proxy ?</h2>
+						<ul>
+							<li>Proxy à l'envers</li>
+							<li>Permet aux utilisateurs d'internet d'acceder à certains serveurs du réseau interne</li>
+							<li>Bande passante réduite</li>
+						</ul>
+
+					</section>
+
+					<section>
+						<img alt="proxy" src="img/reverseProxy.gif" id="proxy"/>
+					</section>
+
+					<section>
+						<h2>Quel intérêt ? </h2>
+
+						<ul>
+							<li>Protège le réseau interne des attaques directes</li>
+							<li></li>
+						</ul>
+					</section>
+
+				</section>
+
+<!-- Outro -->
+				<section>
+					<section data-background="#4d7e65" data-background-transition="zoom">
+						<h1>Merci de votre écoute</h1>
+						<p>
+							<small>Hugo GYBELS - Proxy Reverse Proxy</small>
+						</p>
+						<img id="logoFin" src="img/logo.png" />
+					</section>
 				</section>
 
 

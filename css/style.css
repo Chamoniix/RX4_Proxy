@@ -7,10 +7,25 @@
   background-color: #222;
 }
 
+#proxy {
+  background-color: #222;
+  border: none;
+}
+
 .reveal .slide-number {
     color: #80BA26;
     font-size : 0.7em;
-    right: 47px;
-    bottom: 30px;
+    right: 33px;
+    bottom: 43px;
     background-color: inherit;
+}
+
+#logoFin {
+  position:absolute;
+  height: 45%;
+  width: 15%;
+  border: none;
+  left: 0;
+  background-color: #6DAA8A;
+
 }
