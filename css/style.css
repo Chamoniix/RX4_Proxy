@@ -19,6 +19,13 @@
     bottom: 43px;
     background-color: inherit;
 }
+#centerBlock {
+  text-align: center;
+}
+
+.pLeft {
+  text-align: left;
+}
 
 #logoFin {
   position:absolute;

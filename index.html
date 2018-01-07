@@ -64,11 +64,24 @@
 						* Pour une application
 						* Transmet les requêtes à internet
 						* Souvent **HTML**
-						* Fonctionne comme un "relai"
+						* Fonctionne comme un "relais"
 					</section>
 
 					<section>
 						<img alt="proxy" src="img/proxy.gif" id="proxy"/>
+					</section>
+
+					<section>
+						<h2>Avantages</h2>
+						<ul>
+							<li>Pas de relation directe entre réseau interne et cible</li>
+							<li>Faible importance du point de vu <b>intégrité</b>
+							<blockquote id="centerBlock">
+								Sauf si le proxy sert de cache <br /><em>Cf. partie suivante</em>
+							</blockquote></li>
+							<li>Vérification des l'intégrité des requpetes entrantes et sortantes</li>
+							<li>Analyse anti-virus du flux http</li>
+						</ul>
 					</section>
 
 					<section>
@@ -147,8 +160,10 @@
 						<h2>Qu'est ce qu'un reverse proxy ?</h2>
 						<ul>
 							<li>Proxy à l'envers</li>
+							<li>Protège le serveur et non le client</li>
+							<li>Protège les ressources</li>
 							<li>Permet aux utilisateurs d'internet d'acceder à certains serveurs du réseau interne</li>
-							<li>Bande passante réduite</li>
+							<li>Réparti la charge</li>
 						</ul>
 
 					</section>
@@ -159,14 +174,28 @@
 
 					<section>
 						<h2>Quel intérêt ? </h2>
-
 						<ul>
 							<li>Protège le réseau interne des attaques directes</li>
 							<li>Le cache soulage le serveur (<em>accélérateur</em>)</li>
-							<li>Réparti la charge</li>
+							<li>Bande passante réduite</li>
 						</ul>
 					</section>
 
+					<section>
+						<h2>Exemple</h2>
+						<p class="pLeft">Une entreprise publie des <b>ressources HTTP</b> depuis un serveur <b>Tomcat</b> <em>(Ex. Spring)</em></p>
+						<p class="pLeft">&gt; Passage complèxe au HTTPS</p>
+						<div class="fragment">
+						<p class="pLeft">
+							&rarr; Encryption par le reverse proxy :
+							<ul>
+								<li>Pas de modification sur la plateforme de base</li>
+								<li>Pas d'effets de bord</li>
+								<li>Retour en arrière facile</li>
+							</ul>
+						</p>
+						</div>
+					</section>
 				</section>
 
 <!-- Quelques outils -->
